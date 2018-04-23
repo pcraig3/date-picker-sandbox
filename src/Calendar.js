@@ -33,10 +33,8 @@ export default class Calendar extends Component {
       <div className="calender-wrapper" name={name}>
         <DayPicker
           month={new Date(2018, 5)}
-          fromMonth={new Date(2018, 5)}
-          toMonth={new Date(2018, 6)}
-          numberOfMonths={2}
-          disabledDays={[{ daysOfWeek: [0, 1, 3, 4, 6] }]}
+          numberOfMonths={1}
+          disabledDays={[{ daysOfWeek: [0, 6] }]}
           onDayClick={this.handleDayClick}
           onFocus={() => onFocus(value)}
           onBlur={() => onBlur(value)}
