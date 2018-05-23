@@ -28,8 +28,21 @@ class App extends Component {
                   />
                 </div>
                 <div>
+                  <label>Days</label>
+                  <Field name="days" type="select" component="select" multiple>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                  </Field>
+                </div>
+                <div>
                   <label>Calendar Field</label>
-                  <Field name="calendar" component={Calendar} />
+                  <Field
+                    name="calendar"
+                    type="select"
+                    multiple
+                    component={Calendar}
+                  />
                 </div>
                 <div className="buttons">
                   <button type="submit" disabled={submitting || pristine}>

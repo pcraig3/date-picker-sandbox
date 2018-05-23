@@ -30,3 +30,12 @@ form label {
   display: block;
   font-size: 24px;
 }
+
+.days-select {
+  position: absolute;
+  left: 20px;
+}
+
+.days-select select {
+  height: 440px;
+}
