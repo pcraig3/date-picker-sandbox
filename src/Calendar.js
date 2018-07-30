@@ -35,13 +35,15 @@ export default class Calendar extends Component {
     return (
       <div className="calender-wrapper" name={name}>
         <DayPicker
-          month={new Date(2018, 5)}
+          fromMonth={new Date(2018, 5)}
+          toMonth={new Date(2018, 8)}
           numberOfMonths={1}
           disabledDays={[{ daysOfWeek: [0, 6] }]}
           selectedDays={value || []}
           onDayClick={this.handleDayClick}
           onFocus={() => onFocus(value)}
           onBlur={() => onBlur(value)}
+          month={new Date(2018, 5)}
         />
         <p>selected days:</p>
         <pre>{JSON.stringify(value)}</pre>
